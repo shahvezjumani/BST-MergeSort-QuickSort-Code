@@ -121,7 +121,7 @@ public class Tree {
             }
             Node IS = inOrderSuccessor(node.right);
             node.value = IS.value;
-            node.right = deleteNode(IS.value,node);
+            node.right = deleteNode(IS.value,node.right);
         }
         return node;
     }
