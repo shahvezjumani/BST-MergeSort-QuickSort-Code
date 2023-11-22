@@ -101,6 +101,7 @@ public class Tree {
             return search(key,node.right);
         }
     }
+    // method for delete node in BST
     public void deleteNode(int key){
         root = deleteNode(key,root);
     }
